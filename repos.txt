@@ -1,0 +1,164 @@
+Lastenheft
+Projekt
+
+Entwicklung einer webbasierten Steuerungs- und Verwaltungssoftware für einen autonomen mobilen Lagerassistenten
+
+Auftraggeber
+
+RunLifE
+
+Auftragnehmer
+
+Auszubildender Fachinformatiker für Anwendungsentwicklung
+
+1. Ausgangssituation
+Im Lager werden Transportaufträge aktuell überwiegend manuell organisiert. Es existiert keine zentrale Software zur Verwaltung der Aufträge oder zur Überwachung des mobilen Lagerassistenten. Dadurch entstehen unnötiger Koordinationsaufwand und fehlende Transparenz über den aktuellen Status der Transporte.
+
+2. Ziel des Projekts
+Es soll eine webbasierte Anwendung entwickelt werden, mit der Transportaufträge erstellt und verwaltet werden können. Außerdem soll der mobile Lagerassistent über die Anwendung gesteuert und überwacht werden.
+Alle Informationen sollen dauerhaft in einer PostgreSQL-Datenbank gespeichert werden.
+
+3. Anforderungen
+Muss-Anforderungen
+Login für Benutzer
+Benutzerverwaltung
+Transportaufträge erstellen, bearbeiten und löschen
+Statusanzeige des Roboters
+Speicherung aller Daten in PostgreSQL
+REST-API zwischen Frontend und Backend
+Kann-Anforderungen
+Verlauf der Transportaufträge
+Live-Status
+Statistiken
+Benachrichtigungen
+Erweiterungsmöglichkeiten über REST-API
+
+4. Nicht Bestandteil des Projekts
+Entwicklung der Roboterhardware
+Entwicklung von Navigationsalgorithmen
+Mobile App
+Cloudbetrieb
+Produktive Inbetriebnahme
+Zertifizierungen
+
+5. Technische Anforderungen
+Backend:
+Python
+Frontend:
+HTML
+CSS
+JavaScript
+Datenbank:
+PostgreSQL
+Betriebssystem:
+Linux
+Versionsverwaltung:
+Git
+Entwicklungsumgebung:
+Visual Studio Code
+Nutzen
+Durch die Software werden Transportaufträge zentral verwaltet. Dadurch verbessert sich die Übersicht über den aktuellen Lagerbetrieb und die Koordination der Transporte wird vereinfacht. Gleichzeitig bildet die Anwendung eine Grundlage für zukünftige Erweiterungen.
+
+
+
+
+Pflichtenheft
+Projekt
+Entwicklung einer webbasierten Steuerungs- und Verwaltungssoftware für einen autonomen mobilen Lagerassistenten
+1. Einleitung
+Dieses Pflichtenheft beschreibt die technische Umsetzung der Anforderungen aus dem Lastenheft.
+
+2. Systemübersicht
+Die Anwendung besteht aus drei Komponenten:
+Frontend
+Backend
+PostgreSQL-Datenbank
+Das Frontend kommuniziert über eine REST-API mit dem Backend. Das Backend verarbeitet die Anfragen und speichert die Daten in der Datenbank.
+
+3. Funktionen
+Benutzeranmeldung
+Benutzer melden sich mit Benutzername und Passwort an.
+Nach erfolgreicher Anmeldung erhalten sie Zugriff entsprechend ihrer Rolle.
+Benutzerverwaltung
+Administratoren können
+Benutzer anlegen
+Benutzer bearbeiten
+Benutzer löschen
+Transportaufträge
+
+Folgende Funktionen werden umgesetzt:
+
+Auftrag erstellen
+Auftrag bearbeiten
+Auftrag löschen
+Aufträge anzeigen
+
+Zu jedem Auftrag werden unter anderem gespeichert:
+
+Bezeichnung
+Startposition
+Zielposition
+Priorität
+Status
+Robotersteuerung
+
+Die Anwendung bietet Funktionen zum
+
+Starten eines Transportauftrags
+Stoppen des Roboters
+Anzeigen des aktuellen Status
+Statusanzeige
+
+Die Oberfläche zeigt den aktuellen Zustand des Lagerassistenten an.
+
+Beispiele:
+
+Bereit
+Transport aktiv
+Auftrag abgeschlossen
+Fehler
+
+4. Datenbank
+Es werden unter anderem folgende Tabellen verwendet:
+users
+roles
+transport_orders
+robot_status
+Zwischen den Tabellen bestehen entsprechende Beziehungen.
+
+5. Benutzeroberfläche
+Die Anwendung besitzt folgende Seiten:
+Login
+Dashboard
+Transportaufträge
+Benutzerverwaltung
+Roboterstatus
+Die Oberfläche wird responsiv gestaltet und über den Browser bedient.
+
+6. Tests
+Folgende Tests werden durchgeführt:
+Funktionstest Login
+CRUD-Test der Transportaufträge
+Test der Benutzerverwaltung
+API-Test
+Datenbanktest
+
+7. Entwicklungswerkzeuge
+Python
+HTML
+CSS
+JavaScript
+PostgreSQL
+Git
+Linux
+Visual Studio Code
+Festgestellte Fehler werden dokumentiert und behoben.
+
+8. Projektergebnis
+Nach Abschluss des Projekts steht eine funktionsfähige Webanwendung zur Verfügung.
+Diese ermöglicht:
+Benutzerverwaltung
+Verwaltung von Transportaufträgen
+Steuerung des mobilen Lagerassistenten
+Speicherung aller Daten in PostgreSQL
+Kommunikation über eine REST-API
