@@ -78,7 +78,6 @@ Das Frontend kommuniziert über eine REST-API mit dem Backend. Das Backend verar
 3. Funktionen
 Benutzeranmeldung
 Benutzer melden sich mit Benutzername und Passwort an.
-Nach erfolgreicher Anmeldung erhalten sie Zugriff entsprechend ihrer Rolle.
 Benutzerverwaltung
 Administratoren können
 Benutzer anlegen
@@ -121,7 +120,6 @@ Fehler
 4. Datenbank
 Es werden unter anderem folgende Tabellen verwendet:
 users
-roles
 transport_orders
 robot_status
 Zwischen den Tabellen bestehen entsprechende Beziehungen.
@@ -129,7 +127,6 @@ Zwischen den Tabellen bestehen entsprechende Beziehungen.
 5. Benutzeroberfläche
 Die Anwendung besitzt folgende Seiten:
 Login
-Dashboard
 Transportaufträge
 Benutzerverwaltung
 Roboterstatus
